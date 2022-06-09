@@ -38,7 +38,7 @@ namespace CoreIdentity.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]//güvenlik eğer client da token değeri varsa istek yapabilecek başka yerden post yapamaz
+        [ValidateAntiForgeryToken]//güvenlik eğer client da token değeri varsa istek yapabilecek başka yerden post yapamaz.
         public async Task<IActionResult> GirisYap(UserSignInViewModel model)
         {
             if (ModelState.IsValid)
